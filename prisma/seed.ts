@@ -165,15 +165,15 @@ async function main(): Promise<void> {
             description:
               'A browser-based slot game with multiple bonus mechanics, simulation-backed game math and an AI helper.',
             technologies: ['React', 'TypeScript', 'Phaser 3', 'Node.js'],
-            url: 'https://github.com/dn118',
+            url: 'https://github.com/dn118/slots_game',
             position: 0,
           },
           {
-            title: 'Cross-posting Platform',
+            title: 'Virtual Menu System',
             description:
-              'A full-stack application for preparing and publishing content across multiple channels.',
-            technologies: ['React', 'Node.js', 'REST API'],
-            url: 'https://github.com/dn118',
+              'A QR-based restaurant menu platform designed for simple browsing and practical content management.',
+            technologies: ['HTML', 'CSS', 'JavaScript', 'PHP'],
+            url: 'https://github.com/dn118/Riverside_menu',
             position: 1,
           },
           {
@@ -181,7 +181,7 @@ async function main(): Promise<void> {
             description:
               'This backend-first portfolio: a typed GraphQL API, CockroachDB persistence and a Dockerized local environment.',
             technologies: ['NestJS', 'GraphQL', 'Prisma', 'CockroachDB'],
-            url: 'https://github.com/dn118',
+            url: 'https://github.com/dn118/danil-digital-card',
             position: 2,
           },
         ],
