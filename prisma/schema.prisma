@@ -1,0 +1,66 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "cockroachdb"
+  url      = env("DATABASE_URL")
+}
+
+model Profile {
+  id         Int          @id @default(sequence())
+  name       String
+  role       String
+  location   String
+  summary    String
+  skills     Skill[]
+  contacts   Contact[]
+  experience Experience[]
+  projects   Project[]
+}
+
+model Skill {
+  id            Int     @id @default(sequence())
+  name          String
+  category      String
+  groupPosition Int     @default(0)
+  position      Int     @default(0)
+  profile       Profile @relation(fields: [profileId], references: [id], onDelete: Cascade)
+  profileId     Int
+
+  @@unique([profileId, name])
+}
+
+model Contact {
+  id        Int     @id @default(sequence())
+  label     String
+  value     String
+  url       String
+  position  Int     @default(0)
+  profile   Profile @relation(fields: [profileId], references: [id], onDelete: Cascade)
+  profileId Int
+}
+
+model Experience {
+  id           Int      @id @default(sequence())
+  role         String
+  company      String
+  period       String
+  location     String?
+  description  String
+  technologies String[]
+  position     Int      @default(0)
+  profile      Profile  @relation(fields: [profileId], references: [id], onDelete: Cascade)
+  profileId    Int
+}
+
+model Project {
+  id           Int      @id @default(sequence())
+  title        String
+  description  String
+  technologies String[]
+  url          String?
+  position     Int      @default(0)
+  profile      Profile  @relation(fields: [profileId], references: [id], onDelete: Cascade)
+  profileId    Int
+}

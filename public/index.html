@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Danil Belov — Backend and Full-Stack TypeScript developer."
+    />
+    <title>Danil Belov · Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <div class="noise" aria-hidden="true"></div>
+    <header class="nav shell">
+      <a class="brand" href="#top" aria-label="Home">
+        <span class="brand-mark">DB</span>
+        <span>danil.dev</span>
+      </a>
+      <nav aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#skills-section">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#work">Work</a>
+        <a class="nav-cta" href="#contact">Let's talk</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero shell">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="status-dot"></span> Available for backend work</div>
+          <p class="kicker">Hello, I'm <span data-profile="name">Danil Belov</span>.</p>
+          <h1>I turn complex backend problems into <em>clear, reliable software.</em></h1>
+          <p class="lead" data-profile="summary">
+            I build maintainable web applications and APIs with TypeScript,
+            Node.js and modern backend tooling.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#work">Explore my work <span>↘</span></a>
+            <a class="button ghost" href="https://github.com/dn118" target="_blank" rel="noreferrer">GitHub ↗</a>
+          </div>
+        </div>
+
+        <aside class="code-card" aria-label="Developer profile preview">
+          <div class="window-bar">
+            <span></span><span></span><span></span>
+            <small>profile.ts</small>
+          </div>
+          <pre><code><span class="syntax-key">const</span> developer = {
+  name: <span class="syntax-string">"Danil Belov"</span>,
+  focus: <span class="syntax-string">"Backend systems"</span>,
+  values: [
+    <span class="syntax-string">"clarity"</span>,
+    <span class="syntax-string">"ownership"</span>,
+    <span class="syntax-string">"reliability"</span>
+  ],
+  status: <span class="syntax-string">"ready to build"</span>
+};</code></pre>
+          <div class="card-footer"><span>● API online</span><span>TypeScript</span></div>
+        </aside>
+      </section>
+
+      <section class="section shell" id="about">
+        <div class="section-heading">
+          <span>01 / ABOUT</span>
+          <h2>Engineering with intention.</h2>
+        </div>
+        <div class="about-grid">
+          <p class="about-copy">
+            I work across backend and frontend, with a strong focus on typed APIs,
+            data modelling and maintainable architecture. My goal is simple: make
+            the code easy to understand today and safe to change tomorrow.
+          </p>
+          <dl class="facts">
+            <div><dt>Based in</dt><dd data-profile="location">Riga, Latvia · Remote</dd></div>
+            <div><dt>Core stack</dt><dd>TypeScript · NestJS · GraphQL</dd></div>
+            <div><dt>Education</dt><dd>BSc Computer Science · TSI</dd></div>
+            <div><dt>Languages</dt><dd>English · Russian</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section shell" id="skills-section">
+        <div class="section-heading horizontal">
+          <div>
+            <span>02 / TECHNICAL EXPERTISE</span>
+            <h2>The complete toolkit.</h2>
+          </div>
+          <p>Technologies used across commercial work, freelance delivery, education and personal projects.</p>
+        </div>
+        <div class="skill-grid" id="skills" aria-label="Technical skills">
+          <div class="skeleton"></div>
+          <div class="skeleton"></div>
+          <div class="skeleton"></div>
+        </div>
+      </section>
+
+      <section class="section shell" id="experience-section">
+        <div class="section-heading horizontal">
+          <div>
+            <span>03 / EXPERIENCE</span>
+            <h2>From real work to reliable products.</h2>
+          </div>
+          <p>Commercial development, freelance delivery and hands-on team responsibility.</p>
+        </div>
+        <div class="experience" id="experience">
+          <div class="skeleton"></div>
+          <div class="skeleton"></div>
+          <div class="skeleton"></div>
+          <div class="skeleton"></div>
+        </div>
+      </section>
+
+      <section class="section shell" id="work">
+        <div class="section-heading horizontal">
+          <div><span>04 / SELECTED WORK</span><h2>Projects built to work.</h2></div>
+          <p>A selection of product, game and platform work.</p>
+        </div>
+        <div class="projects" id="projects">
+          <div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div>
+        </div>
+      </section>
+
+      <section class="contact shell" id="contact">
+        <span>05 / CONTACT</span>
+        <h2>Have a problem worth solving?</h2>
+        <p>Tell me about the product, the team, and what success looks like.</p>
+        <div class="contact-links" id="contacts"></div>
+      </section>
+    </main>
+
+    <footer class="shell">
+      <span>© <span id="year"></span> Danil Belov</span>
+      <span>Powered by NestJS + GraphQL</span>
+    </footer>
+
+    <div id="error" class="error-toast" role="alert" hidden>
+      Profile data is temporarily unavailable.
+    </div>
+  </body>
+</html>
