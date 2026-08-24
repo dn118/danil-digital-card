@@ -9,6 +9,14 @@ profile data in CockroachDB. The entire environment starts with Docker Compose.
 ![GraphQL](https://img.shields.io/badge/GraphQL-16-E10098?logo=graphql&logoColor=white)
 ![Prisma](https://img.shields.io/badge/Prisma-6-2D3748?logo=prisma&logoColor=white)
 
+## Live demo
+
+<https://dn118.github.io/danil-digital-card/>
+
+GitHub Pages hosts the static presentation layer. The complete NestJS,
+GraphQL, Prisma and CockroachDB application runs locally through Docker as
+described below.
+
 ## What it demonstrates
 
 - strict TypeScript and NestJS module boundaries;
