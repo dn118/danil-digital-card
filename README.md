@@ -45,7 +45,7 @@ browser. To preview only the visual design without Docker, open
 `public/index.html`; it falls back to local preview data when the API is absent.
 
 ```bash
-git clone YOUR_REPOSITORY_URL
+git clone https://github.com/dn118/danil-digital-card.git
 cd danil-digital-card
 docker compose up --build
 ```
